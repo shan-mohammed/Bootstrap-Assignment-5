@@ -5,7 +5,7 @@
 }
 .hero{
     height:70vh;
-    background: url('./images/photo-1478760329108-5c3ed9d495a0.avif') center center/cover no-repeat;
+    background: url('./images/photo-1478760329108-5c3ed9d495a0.jpg') center center/cover no-repeat;
 }
 .carousel-item{
     height:60vh; /* 60% screen height */
