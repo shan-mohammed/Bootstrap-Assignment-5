@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling a Personal Portfolio with CSS3</title>
+    <link rel="stylesheet" href="./links/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- nav-bar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark mb-2"
+        style="background: linear-gradient(90deg, #123535, #29454a)"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./images/logo of me.png"
+              class="img-fluid"
+              style="height: 50px"
+              alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-md-auto fs-5 text-light">
+              <a class="nav-link active text-light" aria-current="page" href="#"
+                >Home</a
+              >
+              <a class="nav-link text-light" href="#about">About</a>
+              <a class="nav-link text-light" href="#service">Services</a>
+              <a class="nav-link text-light" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- hero section -->
+      <section
+        class="container-fluid hero d-flex align-items-center text-white mb-2"
+      >
+        <div class="container text-center">
+          <h1 class="fs-1">Welcome to My Portfolio</h1>
+          <p>Explore my projects, skills, and journey in web development.</p>
+        </div>
+      </section>
+      <!-- About me -->
+      <article>
+        <div class="container-fluid" id="about">
+          <div class="row">
+            <div class="col-12 col-md-6 g-0">
+              <img
+                src="./images/pp size - Copy copy.png"
+                class="img-fluid"
+                alt="pp size image"
+              />
+            </div>
+            <div
+              class="col-12 col-md-6 align-content-center g-0"
+              style="background-color: #f2f2f2"
+            >
+              <h3 class="card-title ms-3 mt-3 fw-bold text-primary">
+                About Me
+              </h3>
+              <p class="card-text fs-5 p-3">
+                Hello, my name is Mohammed .I am an upcoming web Developer,
+                after a long career break,I joined with Entri for study
+                web-developing.Now this is my passion.I can build a web site
+                using HTML, CSS, and JavaSript
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Projects -->
+      <section class="mb-3">
+        <div
+          class="container-fluid py-4 my-4"
+          id="project"
+          style="background-color: #f2f2f2"
+        >
+          <h3 class="text-primary">My Projects</h3>
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+              <div class="card h-100 w-100 shadow project-card">
+                <img
+                  src="./images/food-delivery-man-with-boxes-with-food.jpg"
+                  class="card-img-top"
+                  alt="delivery man"
+                />
+
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title text-warning">Food delivery app</h5>
+
+                  <p class="card-text">
+                    As part of my curriculum at Entri, I was tasked with
+                    building a real-world solution that handles complex user
+                    interactions.
+                  </p>
+
+                  <a
+                    href="#"
+                    class="btn btn-primary w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    >Know More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Food delivery app
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Built a Food Delivery App during my studies at Entri. The
+                    project allows users to browse food items, search dishes,
+                    add products to cart, and place orders through a clean and
+                    responsive interface. It helped me strengthen my frontend
+                    development skills using modern web technologies and
+                    user-friendly design principles
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card-2 -->
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+              <div class="card h-100 w-100 shadow project-card">
+                <img
+                  src="./images/online-taxi.jpg"
+                  class="card-img-top"
+                  alt="taxi waiting image"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title text-warning">Online Taxi App</h5>
+                  <p class="card-text">
+                    Developed a seamless, real-time taxi booking platform that
+                    connects passengers with nearby drivers via a responsive web
+                    interface.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-primary w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    >Know More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Online Taxi App<
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Built an Online Taxi App during my studies at Entri. The
+                    project allows users to book rides, view available taxis,
+                    check fare details, and manage bookings through a clean and
+                    responsive interface. It helped me improve my frontend
+                    development skills by creating smooth user interactions and
+                    practical real-world features.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card-3 -->
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+              <div class="card h-100 w-100 shadow project-card">
+                <img
+                  src="./images/thar-2025-exterior-right-front-three-quarter-5.avif"
+                  class="card-img-top"
+                  alt="delivery man"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title text-warning">Rent a Car App</h5>
+                  <p class="card-text">
+                    Built a Car Rent App during my studies at Entri. The project
+                    allows users to browse cars, view details, and book rentals
+                    through a clean and responsive interface. It helped me
+                    improve my frontend development skills using modern web
+                    technologies.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-primary w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    >Know More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Rent a Car App
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Built a Rent a Car App during my studies at Entri. The
+                    project allows users to browse available cars, view vehicle
+                    details, check pricing, and book rentals through a clean and
+                    responsive interface. It helped me enhance my frontend
+                    development skills by building practical features and
+                    improving user experience design.
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- services -->
+
+      <section id="service">
+        <div class="container">
+          <h3 class="text-primary mb-3">Services</h3>
+          <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#heroCarousel"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#heroCarousel"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#heroCarousel"
+                data-bs-slide-to="2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#heroCarousel"
+                data-bs-slide-to="3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#heroCarousel"
+                data-bs-slide-to="4"
+              ></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div
+                class="carousel-item active"
+                style="background-image: url(&quot;images/responsiv.jpg&quot;)"
+              >
+                <div class="carousel-caption">
+                  <h3 class="fs-1">
+                    Modern responsive websites for your business.
+                  </h3>
+                </div>
+              </div>
+
+              <div
+                class="carousel-item"
+                style="
+                  background-image: url(&quot;images/frontend\ img.jpg&quot;);
+                "
+              >
+                <div class="carousel-caption">
+                  <h3 class="fs-1">Frontend and Backend Developing.</h3>
+                </div>
+              </div>
+
+              <div
+                class="carousel-item"
+                style="
+                  background-image: url(&quot;images/landing-page.jpg&quot;);
+                "
+              >
+                <div class="carousel-caption">
+                  <h3 class="fs-1">Landing Page Creation.</h3>
+                </div>
+              </div>
+
+              <div
+                class="carousel-item"
+                style="
+                  background-image: url(&quot;images/website-maintenance.jpg&quot;);
+                "
+              >
+                <div class="carousel-caption">
+                  <h3 class="fs-1">Web Site Maintanence.</h3>
+                </div>
+              </div>
+
+              <div
+                class="carousel-item"
+                style="
+                  background-image: url(&quot;images/UI-improvments.jpg&quot;);
+                "
+              >
+                <div class="carousel-caption">
+                  <h3 class="fs-1">UI Improvments.</h3>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#heroCarousel"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#heroCarousel"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Form -->
+      <section id="contact">
+        <div class="container" style="background-color: #0a5865">
+          <h3 class="mt-4 pt-3 text-center text-light">Contacts</h3>
+          <form class="form">
+            <div class="mb-3">
+              <label for="name" class="form-label text-light">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Name.."
+              />
+            </div>
+            <div class="mb-3">
+              <label
+                for="exampleFormControlInput1"
+                class="form-label text-light"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label
+                for="exampleFormControlTextarea1"
+                class="form-label text-light"
+                >Your Messages</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="row justify-content-center">
+              <div class="text-center col-4 col-md-6 col-lg-12">
+                <button
+                  type="submit"
+                  class="btn btn-danger w-100 w-md-50 w-lg-25 mb-3"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="container bg-secondary mb-4">
+        <div class="row justify-">
+          <div class="col-12 col-md-8 col-lg-4 mt-4">
+            <div class="flex justify-content-end">
+              <h5 class="text-light">Social Media</h5>
+              <p class="text-light">You can search through...</p>
+              <div>
+                <i class="bi bi-linkedin text-light"></i>
+                <i class="bi bi-whatsapp text-light"></i>
+                <i class="bi bi-facebook text-light"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-2 mt-4">
+            <div class="flexjustify-content-start">
+              <h5 class="mb-4 text-light">QUICK LINKS</h5>
+              <div>
+                <a href="#" class="text-light text-decoration-none">Home</a>
+              </div>
+              <div>
+                <a href="#service" class="text-light text-decoration-none"
+                  >Services</a
+                >
+              </div>
+              <div>
+                <a href="#contact" class="text-light text-decoration-none"
+                  >Contact</a
+                >
+              </div>
+              <div>
+                <a href="#about" class="text-light text-decoration-none"
+                  >About Us</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 mt-4">
+            <div class="flex">
+              <h5 class="text-light mb-3">MY WORKS</h5>
+              <div class="text-light">web-developing</div>
+              <div class="text-light">UI</div>
+              <div class="text-light">Testing</div>
+              <div class="text-light">Create Portfolio</div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="flex justify-content-start mt-4">
+              <h5 class="text-light mb-4">STAY TUNED</h5>
+              <p class="text-light">
+                Get updates and tips stright to your inbox
+              </p>
+              <div class="input-group w-100 mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                />
+                <button class="btn btn-primary" type="button">→</button>
+              </div>
+            </div>
+          </div>
+          <!-- Rights -->
+        </div>
+        <p class="text-center mb-2 bg-dark text-light">
+          &copy; 2026 Mohammed. All rights reserved.
+        </p>
+        <div></div>
+      </div>
+    </footer>
+    <script src="./links/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
